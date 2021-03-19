@@ -49,6 +49,15 @@ void sortArrayDesc(int array[], int size) {
 	for(i = 0; i < size; i++) {
 		printf("%d", array[i]);
 	}
+	printf("\n");
+}
+
+void calc_total(int array[], int count){
+	int total=0, size = sizeof(array);
+	for(int i=0; i<count ;i++){
+		total+=array[i];
+	}
+	printf("Total : %d", total);
 }
 int main()
 {
@@ -63,4 +72,5 @@ int main()
  
    sort_numbers_ascending(number, count);
    sortArrayDesc(number, count);
+   calc_total(number, count);
 }
